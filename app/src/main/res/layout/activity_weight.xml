@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcolor"
+    android:gravity="center_vertical"
+    tools:context=".WeightActivity">
+
+
+    <EditText
+        android:id="@+id/etInp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/box"
+        android:hint="Input"
+        android:inputType="numberDecimal"
+        android:maxLength="20"
+        android:focusedByDefault="true"
+        android:maxLines="1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtIpunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/txtInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtIpunit"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:text="Choose the conversion units"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInp"
+        android:background="@drawable/spinner_border"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/btnConv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Convert"
+        android:background="@drawable/background_btn1"
+        android:textColor="@color/WhiteText"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:onClick="convert"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spL"/>
+
+    <TextView
+        android:id="@+id/txtOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConv"
+        android:padding="10dp"
+        android:hint="Output"
+        android:background="@drawable/box"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtOpunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOut"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+
+</RelativeLayout>

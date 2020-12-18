@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgcolor"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".BmiActivity">
+
+    <TextView
+        android:id="@+id/txtInp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="Mass (in Kilograms)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etInp1"
+        android:layout_below="@id/txtInp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/box"
+        android:hint="Enter weight in kilograms"
+        android:inputType="numberDecimal"
+        android:maxLength="20"
+        android:focusedByDefault="true"
+        android:maxLines="1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtInp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etInp1"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:text="Height (in Metres)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etInp2"
+        android:layout_below="@id/txtInp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/box"
+        android:hint="Enter height in metres"
+        android:inputType="numberDecimal"
+        android:maxLength="20"
+        android:focusedByDefault="true"
+        android:maxLines="1"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnConv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Calculate   BMI"
+        android:background="@drawable/background_btn1"
+        android:textColor="@color/WhiteText"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:onClick="find"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etInp2"/>
+
+    <TextView
+        android:id="@+id/txtOpunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConv"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Body Mass Index (BMI)"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/txtOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOpunit"
+        android:padding="10dp"
+        android:hint="Resultant BMI"
+        android:background="@drawable/box"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

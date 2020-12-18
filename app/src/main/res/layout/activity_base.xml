@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcolor"
+    android:gravity="center_vertical"
+    tools:context=".BaseActivity">
+
+
+    <EditText
+        android:id="@+id/etInp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box"
+        android:focusedByDefault="true"
+        android:hint="Input"
+        android:inputType="numberDecimal"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtIpunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtIpunit"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="FROM"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtIpunit"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="70dp"
+        android:text="TO"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/rlinp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtS"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Spinner
+            android:id="@+id/spS"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_border"
+            android:layout_width="0dp" />
+
+        <Space
+            android:id="@+id/space"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp" />
+
+        <Spinner
+            android:id="@+id/spD"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_border"
+            android:layout_width="0dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlinp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_btn1"
+        android:onClick="convert"
+        android:padding="5dp"
+        android:text="Convert"
+        android:textColor="@color/WhiteText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box"
+        android:hint="Output"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtOpunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

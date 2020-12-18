@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/bgcolor"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btncalc"
+        android:layout_width="190dp"
+        android:layout_height="71dp"
+        android:text="Calculator"
+        android:textAllCaps="true"
+        android:padding="5dp"
+        android:background="@drawable/background_btn1"
+        android:textColor="@color/WhiteText"
+        android:elevation="10dp"
+        android:onClick="calc"
+        android:layout_gravity="center_horizontal"
+        android:textSize="23sp"
+        />
+
+    <Button
+        android:id="@+id/btnBmi"
+        android:layout_width="190dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="true"
+        android:padding="5dp"
+        android:elevation="10dp"
+        android:text="BMI finder"
+        android:onClick="bmi"
+        android:textColor="@color/WhiteText"
+        android:background="@drawable/background_btn1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="23sp"
+        />
+
+
+    <Button
+        android:id="@+id/btnBase"
+        android:layout_width="190dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="true"
+        android:padding="5dp"
+        android:elevation="10dp"
+        android:text="Radix Swap"
+        android:onClick="base"
+        android:textColor="@color/WhiteText"
+        android:background="@drawable/background_btn1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="23sp"
+        />
+
+    <Button
+        android:id="@+id/btnconv"
+        android:layout_width="190dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="true"
+        android:padding="5dp"
+        android:elevation="10dp"
+        android:text="Converter"
+        android:onClick="conv"
+        android:textColor="@color/WhiteText"
+        android:background="@drawable/background_btn1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="23sp"
+        />
+
+</LinearLayout>
